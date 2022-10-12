@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye } from "@fortawesome/free-solid-svg-icons";
+import { faEyeLowVision} from "@fortawesome/free-solid-svg-icons";
 import React from 'react';
 import Option from '../Option/Option';
 import { ToastContainer, toast } from 'react-toastify';
@@ -27,11 +27,11 @@ const Quizdetails = ({quiz}) => {
    
     return (
         <div className="question">
-            <div className="">
+          
         <button onClick={()=>notify(correctAnswer)}>
-          <FontAwesomeIcon className="eyeIcon" icon={faEye}></FontAwesomeIcon>
+        <FontAwesomeIcon className="eyeIcon" icon={faEyeLowVision}></FontAwesomeIcon>
         </button>
-      </div>
+     
             <p className="eachQuestion">Question: {question}</p>
              <div className='optionsContainer'>
              {options.map((option) => (

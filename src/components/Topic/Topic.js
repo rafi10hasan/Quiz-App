@@ -11,12 +11,12 @@ const Topic = ({ topic }) => {
   return (
     <div>
       <div className="col container">
-        <div className="card">
+        <div className="card bg-secondary">
           <img src={logo} className="card-img-top" alt="..." />
           <div className="card-body d-flex justify-content-between align-items-center">
-            <h5 className="card-title">{name}</h5>
+            <h5 className="card-title text-white">{name}</h5>
             <Link to={`./quiz/${id}`}>
-            <button className="btn btn-primary">
+            <button className="btn btn-warning">
                 select Topics
                 <FontAwesomeIcon icon={faArrowRight} />
                 
