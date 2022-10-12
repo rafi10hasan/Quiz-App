@@ -7,27 +7,27 @@ import 'react-toastify/dist/ReactToastify.css';
 import './Quizdetails.css'
 
 const Quizdetails = ({quiz}) => {
-    const { id, options, question, correctAnswer } = quiz;
-    const notify = (correct) => toast('Correct Answer =>> '+correct);
+    const {options, question, correctAnswer } = quiz;
+    const notify = (correct) => toast('Correct Answer is =>> '+correct);
   
   
     const correctChecker = (selectedOption) =>{
       if(correctAnswer === selectedOption){
-        const notify = () => toast("Correct !")
-        // console.log(notify);
+        const notify = () => toast("the answer is correct!")
+        
         notify();
   
       }
+      
       else{
-        const notify = () => toast("Wrong !")
+        const notify = () => toast("Wrong Answer !")
         notify();
-        // console.log(notify);
       }
     }
    
     return (
         <div className="question">
-            <div className="eyebutton">
+            <div className="">
         <button onClick={()=>notify(correctAnswer)}>
           <FontAwesomeIcon className="eyeIcon" icon={faEye}></FontAwesomeIcon>
         </button>

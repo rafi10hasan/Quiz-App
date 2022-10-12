@@ -5,7 +5,7 @@ const Option = ({ option, correctChecker}) => {
 
     return (
         <div onClick={() => correctChecker(option)} className="eachOption">
-      <p>{option}</p>
+        <small>{option}</small>
     </div>
     );
 };
