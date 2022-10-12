@@ -1,0 +1,11 @@
+.eachOption{
+    border: 1px solid rgb(0, 248, 215);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0;
+}
+.eachOption:hover{
+    background-color: #B6E2F7;
+    color: white;
+    cursor: pointer;
+}
