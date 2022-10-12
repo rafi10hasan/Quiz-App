@@ -5,7 +5,7 @@ import './quiz.css'
 
 const Quiz = () => {
   const quizes = useLoaderData();
-  const {name, questions, total } = quizes.data;
+  const {name, questions,total} = quizes.data;
   console.log(questions);
   return (
     
