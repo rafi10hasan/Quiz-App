@@ -32,8 +32,8 @@ const Quizdetails = ({quiz}) => {
         <FontAwesomeIcon className="eyeIcon" icon={faEyeLowVision}></FontAwesomeIcon>
         </button>
      
-            <p className="eachQuestion">Question: {question}</p>
-             <div className='optionsContainer'>
+            <p className="each-question">Question: {question}</p>
+             <div className='options-container'>
              {options.map((option) => (
                     <Option 
                     key={option.id} 

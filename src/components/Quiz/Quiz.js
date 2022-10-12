@@ -9,10 +9,10 @@ const Quiz = () => {
   console.log(questions);
   return (
     
-      <div className="quizSpeContainer">
+      <div className="quiz-container">
         <h3 className="text-center">Quiz of {name}</h3>
 
-        <div className="qAndA">
+        <div className="quiz-show">
           {questions.map((quiz) => (
             <Quizdetails key={quiz.id} quiz={quiz}></Quizdetails>
           ))}

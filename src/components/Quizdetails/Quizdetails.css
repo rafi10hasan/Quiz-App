@@ -3,15 +3,16 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 2rem;
     background-color: #ffffff;
+    margin: 0 auto;
   }
-  .eachQuestion {
+  .each-question {
     text-align: center;
     padding: 0 60px;
     font-size: 1.3rem;
     color: rgb(0, 38, 82);
     font-weight: 500;
   }
-  .optionsContainer {
+  .options-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
@@ -22,12 +23,6 @@
     align-items: center;
     margin-top: 20px;
   }
-  .check-btn {
-    background-color: blueviolet;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-  } 
   .eyeIcon{
       position: relative;
       left: 600px;
@@ -36,7 +31,7 @@
   }
   
   @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
-    .optionsContainer {
+    .options-container {
       grid-template-columns: 1fr;
     }
     .question{
@@ -54,7 +49,7 @@
       width: 300px;
       margin: 2rem auto;
     }
-      .optionsContainer {
+      .options-container {
       grid-template-columns: 1fr;
     }
     .eyeIcon{

@@ -14,10 +14,10 @@ import {
 const Statistics = () => {
     const chartData = useLoaderData();
     return (
-        <div className="stat-chart d-flex justify-content-center mt-5">
+        <div className="stat-chart d-flex justify-content-center mt-5 w-100">
         <BarChart
-          width={600}
-          height={600}
+          width={400}
+          height={400}
           data={chartData.data}
           margin={{
             top: 5,
